@@ -1,0 +1,39 @@
+body {
+    background-color: rgb(233, 229, 252);
+}
+.flex-container {
+    display: flex;
+    border: 3px solid black;
+    padding: 10px;
+    }
+    .flex-item {
+    padding: 20px;
+    background-color: lightblue;
+    margin: 5px;
+    border: 2px solid rgb(7, 7, 7);
+    border-radius: 5px;
+    }
+    .flex-container {
+        justify-content: space-between;
+        align-items: center;
+        }
+        .flex-item:nth-child(1) {
+            flex: 2;
+            background-color: rgb(8, 8, 8);
+            }
+            .flex-item:nth-child(2) {
+            flex: 1;
+            background-color: rgb(7, 7, 7);
+            }
+            .flex-item:nth-child(3) {
+            flex: 1;
+            background-color: rgb(7, 7, 7);
+            }
+                .flex-item {
+                    flex-grow: 1;
+                    flex-basis: 60px;
+                    transition: all 0.3s ease; /* Adiciona uma transição para visualizar mudanças */
+                    }
+                    .flex-item:hover {
+                    background-color: lavender; /* Altera a cor de fundo ao passar o mouse */
+                    }
