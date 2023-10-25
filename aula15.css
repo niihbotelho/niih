@@ -1,0 +1,76 @@
+/* Estilo padrão (desktop-first) */
+h1 {
+    font-size: 36px;
+    background-color: rgb(250, 36, 210);
+    }
+
+    @media (max-width: 768px) {
+    h1 {
+    font-size: 28px;
+    background-color: rgb(238, 46, 168);
+    }
+    }
+    /* Adaptação para dispositivos com
+    tela menor que 480px (por exemplo,
+    smartphones) */
+    @media (max-width: 480px) {
+    h1 {
+    font-size: 24px;
+    }
+    }
+    /* Estilo padrão (desktop-first)
+*/
+.column {
+    float: left;
+    width: 50%;
+    }
+    /* Adaptação para dispositivos
+    móveis */
+    @media (max-width: 768px) {
+    .column {
+    float: none;
+    width: 100%;
+    }
+    }
+    /* Estilo padrão (desktopfirst) */
+.sidebar {
+    display: block;
+    }
+    /* Escondendo a sidebar em
+    dispositivos com tela menor
+    que 768px */
+    @media (max-width: 768px) {
+    .sidebar {
+    display: none;
+    }
+    }
+    /* Estilo padrão (desktop-first)
+*/
+.responsive-image {
+    width: 100%;
+    height: auto;
+    }
+    /* Carregando uma imagem menor
+    para dispositivos com tela menor
+    que 768px */
+    @media (max-width: 768px) {
+    .responsive-image {
+    content: url('https://media.istockphoto.com/id/464988959/pt/foto/pato-real-com-tra%C3%A7ado-de-recorte.jpg?s=612x612&w=0&k=20&c=SUhSeo67zEVs8bgUm0K-OrMDD4iQ5s75CxaOG4gBI1Y');
+    }
+    }
+    /* Estilo padrão */
+.container {
+    background-color: lightblue;
+    }
+    /* Cor de fundo diferente para
+    orientação paisagem */
+    @media (orientation: landscape) {
+    .container {
+    background-color:
+    lightcoral;
+    }
+    }
+    body {
+        background-color: rgb(244, 171, 239);
+    }
+    
